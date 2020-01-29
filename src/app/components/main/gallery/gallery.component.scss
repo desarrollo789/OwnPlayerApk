@@ -1,0 +1,111 @@
+html, body {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+    font-weight: 300;
+}
+
+.hide {
+    display: none;
+}
+
+#gallery.container {
+    width: 80%;
+}
+
+#gallery.image-viewer {
+    position: relative;
+}
+
+#gallery.image-viewer.preview {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+#gallery.image-viewer.preview img {
+    float: left;
+    height: 10%;
+    margin-right: 15px;
+}
+
+#gallery.image-viewer > a > img {
+    height: 5%;
+}
+
+#gallery.image-viewer > a {
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 3px;
+    margin: 5px;
+    display: inline-block;
+}
+
+#gallery.image-viewer > a:hover {
+    border: 1px solid #aaa;
+}
+
+#gallery * {
+    position: relative;
+    transition: all 0.15s ease;
+}
+
+#gallery.thumbnail.move-down {
+    top: 12%;
+}
+
+#gallery.preview a {
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+}
+
+#gallery.preview.wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#gallery.preview.close-preview {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+
+#gallery.preview.prev {
+    position: absolute;
+    left: 6px;
+    top: 50%;
+}
+
+#gallery.preview.next {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+}
+
+#gallery.preview.preview-content {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+#gallery.preview.title {
+    color: white;
+}
+
+#gallery.preview.arrow {
+    border-bottom: 10px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    width: 0;
+}
